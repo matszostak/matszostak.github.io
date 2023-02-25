@@ -4,7 +4,7 @@
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -32,24 +32,24 @@ nav > .nav-section {
 }
 
 #nav-logo {
-	justify-content: flex-start;
-	flex-basis: calc(100% / 4);
-	border-left: 1px solid var(--background-color);
+  justify-content: flex-start;
+  flex-basis: calc(100% / 4);
+  border-left: 1px solid var(--background-color);
 }
 #nav-about {
-    gap: 6rem;
-	flex-basis: calc(100% / 2);
+  gap: 6rem;
+  flex-basis: calc(100% / 2);
 }
 #nav-social {
-	gap: 4rem;
-	flex-grow: 1;
+  gap: 4rem;
+  flex-grow: 1;
 }
 h1, h2, h3, a, p, span {
-	font-weight: 400;
-	font-family: "Times New Roman", Times, serif;
-	color: white;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
