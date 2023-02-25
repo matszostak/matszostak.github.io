@@ -1,0 +1,35 @@
+:root {
+  --background-color: rgb(42, 0, 97);
+  --border-color: rgb(217, 219, 218);
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav > .nav-section {
+  display: flex;
+  padding: 2rem 2rem;
+  gap: 1rem;
+  border-left: 1px solid var(--border-color);
+}
+
+h1, h2, h3, a, p, span {
+	font-weight: 400;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
