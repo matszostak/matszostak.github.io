@@ -1,10 +1,10 @@
 :root {
-  --background-color: rgb(15, 10, 35);
+  --background_colour: rgb(15, 10, 35);
   --border-color: white;
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background_colour);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -29,22 +29,27 @@ nav > .nav-section {
 }
 
 #nav-logo {
-  justify-content: flex-start;
-  flex-basis: 2rem;
+  justify-content: center;
+  flex-basis: 2%;
   /* temp: %/
   /* border-left: 1px solid var(--border-color); */
 }
 #nav-about {
   gap: 6rem;
-  flex-basis: calc(100% / 2);
+  flex-basis: calc(98% / 2);
 }
 #nav-social {
-  gap: 4rem;
+  gap: 6rem;
   flex-grow: 1;
 }
 
-#nav-logo:hover, #nav-social:hover, #nav-about:hover {
+#nav-logo, #nav-social, #nav-about {
+  transition-duration: 0.32s;
+  transition-timing-function: ease-in-out;
+}
 
+#nav-logo:hover, #nav-social:hover, #nav-about:hover {
+  background-color: rgb(20, 10, 65);
 }
 
 h1, h2, h3, a, p, span {
