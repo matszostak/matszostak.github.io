@@ -1,6 +1,7 @@
 :root {
-  --background_colour: rgb(20, 30, 40);
-  --border-color: white;
+  --background_colour: rgb(24, 24, 24);
+  --border-color: rgb(0, 180, 0);
+  --title-color: rgb(0, 180, 0);
 }
 
 body {
@@ -12,51 +13,55 @@ body {
   overflow: hidden;
 }
 
-nav {
+header{
+  border-bottom: 2px solid var(--title-color);
+  padding: 1.5rem;
   display: flex;
-  width: 100%;
-  border-bottom: 1px solid var(--border-color);
-}
-
-nav > .nav-section {
-  display: flex;
-  padding: 2rem 2rem;
-  gap: 1rem;
-  /* temp: %/
-  /* border-left: 1px solid var(--border-color); */
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
 
-#nav-logo {
-  justify-content: center;
-  flex-basis: 2%;
-  /* temp: %/
-  /* border-left: 1px solid var(--border-color); */
-}
-#nav-about {
-  gap: 6rem;
-  flex-basis: calc(98% / 2);
-}
-#nav-social {
-  gap: 6rem;
-  flex-grow: 1;
+.header-links{
+  text-align: center;
 }
 
-#nav-logo, #nav-social, #nav-about {
-  transition-duration: 0.32s;
-  transition-timing-function: ease-in-out;
+.header-link{
+  display: inline;
+  margin-left: 2rem;
 }
 
-#nav-logo:hover, #nav-social:hover, #nav-about:hover {
-  background-color: rgb(20, 10, 65);
+h1{
+  font-size: 36px;
+  line-height: 1.5;
+  margin: 0;
+  font-family: "Lucida Console";
+  color: var(--title-color);
+  letter-spacing: -1px;
 }
 
-h1, h2, h3, a, p, span {
-  font-weight: 400;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  color: white;
+h2{
+  font-size:30px;
+}
+ 
+h3{
+  font-size:24px;
+}
+
+h4{
+  font-size:18px;
+}
+
+h5{
+  font-size:12px;
+}
+
+h6{
+  font-size:6px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight:300;
+  color: grey;
 }
 
 a {
@@ -65,20 +70,7 @@ a {
   transition-timing-function: ease-in-out;
 }
 
-a:hover {
-  color: rgb(120, 0, 120);
-}
-
-main {
-  flex-grow: 1;
-}
-
-main > article {
-  display: grid;
-  height: 100%;
-}
-
-main > article > .article-section {
-  height: 100%;
-  border: 1px solid var(--border-color);
+.main-title {
+  margin-top: 80px;
+  margin-left: 80px;
 }
