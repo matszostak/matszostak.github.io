@@ -2,6 +2,7 @@
   --background_colour: rgb(24, 24, 24);
   --border-color: rgb(0, 180, 0);
   --title-color: rgb(0, 180, 0);
+  --text-color: #A9A9A9;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
   overflow: hidden;
 }
 
-header{
+header {
   border-bottom: 2px solid var(--title-color);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -24,16 +25,16 @@ header{
   align-items: center;
 }
 
-.header-links{
+.header-links {
   text-align: center;
 }
 
-.header-link{
+.header-link {
   display: inline;
   margin-left: 2rem;
 }
 
-h1{
+h1 {
   font-size: 36px;
   line-height: 1.5;
   margin: 0;
@@ -42,28 +43,32 @@ h1{
   letter-spacing: -1px;
 }
 
-h2{
-  font-size:30px;
-}
- 
-h3{
-  font-size:24px;
+h2 {
+  font-size: 30px;
 }
 
-h4{
-  font-size:18px;
+h3 {
+  font-size: 24px;
 }
 
-h5{
-  font-size:12px;
+h4 {
+  font-size: 18px;
 }
 
-h6{
-  font-size:6px;
+h5 {
+  font-size: 12px;
 }
 
-h2, h3, h4, h5, h6 {
-  font-weight:300;
+h6 {
+  font-size: 6px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
   color: grey;
 }
 
@@ -76,4 +81,8 @@ a {
 .main-title {
   margin-top: 80px;
   margin-left: 80px;
+}
+
+.text {
+  color: var(--text-color);
 }
