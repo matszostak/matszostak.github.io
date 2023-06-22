@@ -15,7 +15,10 @@ body {
 
 header{
   border-bottom: 2px solid var(--title-color);
-  padding: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
